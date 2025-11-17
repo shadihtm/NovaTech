@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NOVATECH | فروشگاه هدفون و هندزفری</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="assets/logo.png" alt="NOVATECH">
+      </div>
+      <nav class="nav">
+        <ul class="nav-list">
+          <li><a href="#">خانه</a></li>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس</a></li>
+        </ul>
+      </nav>
+      <a href="#" class="btn-login">ورود / ثبت‌نام</a>
+
+      <a href="#" class="cart-icon" id="cart-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+          <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+        </svg>
+        <span class="cart-count" id="cart-count">0</span>
+      </a>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="hero-title">بزرگترین جشنواره تخفیف نواتک شروع شد!</h1>
+      <p class="hero-subtitle">از تاریخ ۱ مهر به مدت یک هفته با 60 درصد تخفیف خرید کن</p>
+
+      <!-- Countdown -->
+      <div class="countdown">
+        <div class="time-box"><span id="hours">15</span></div>
+        <div class="time-box"><span id="minutes">32</span></div>
+        <div class="time-box"><span id="seconds">52</span></div>
+      </div>
+
+      <!-- Promo Section -->
+      <div class="promo-section">
+        <div class="promo-text">
+          <p>همه چیز در باره جشنواره پاییزه نواتک</p>
+          <p class="highlight">به مدت یک هفته، لوازم صوتی و تصویری با قیمت استثنایی تهیه کن</p>
+          <p>تا ۶۰ درصد تخفیف و ارسال رایگان خرید بالای یک میلیون تومان</p>
+          <p class="limited">از قلم نیندازید، فرصت محدود است!</p>
+          <a href="#" class="btn-festival">برو به جشنواره</a>
+        </div>
+        <div class="promo-image">
+          <img src="assets/banner.jpg" alt="جشنواره پاییزه">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <div class="feature-card">
+        <div class="icon">⏰</div>
+        <h3>گارانتی ۷ روزه</h3>
+        <p>بازگشت کالا بدون قید و شرط</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🚚</div>
+        <h3>ارسال رایگان</h3>
+        <p>برای خرید بالای ۵۰۰ هزار تومان</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon">🎧</div>
+        <h3>بهترین برندها</h3>
+        <p>محصولات اورجینال با ضمانت</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Slider -->
+  <section class="products-slider">
+    <div class="container">
+      <h2>محصولات جدید</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href=""><img src="assets/products/1.webp" alt="هدفون" ></a></div>
+          <div class="swiper-slide"><a href=""><img src="assets/products/2.jfif" alt="هندزفری"></a></div>
+          <div class="swiper-slide"><a href=""><img src="assets/products/3.jfif" alt="ایرپاد"></a></div>
+          <div class="swiper-slide"><a href=""><img src="assets/products/4.jfif" alt="اسپیکر"></a></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Best Sellers -->
+<section class="best-sellers">
+  <div class="container">
+    <h2>پر فروش‌ترین محصولات</h2>
+
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <div class="discount-badge" data-discount></div>
+
+        <img src="assets/products/airpods.jfif" alt="ایرپاد پرو">
+
+        <h4>هندزفری بلوتوثی اپل مدل</h4>
+        <h5>AirPods Pro 2nd Generation 2023</h5>
+
+        <div class="price">
+          <span class="old" data-old="2800000">۲,۸۰۰,۰۰۰</span>
+          <span class="new" data-new="2399000">۲,۳۹۹,۰۰۰ تومان</span>
+        </div>
+
+        <button class="btn-add">افزودن به سبد</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <div class="discount-badge" data-discount></div>
+
+        <img src="assets/products/qcy.jfif" alt="QCY T13">
+
+        <h4>هندزفری بی سیم QCY مدل T13</h4>
+        <h5>QCY T13 Bluetooth Earphones</h5>
+
+        <div class="price">
+          <span class="old" data-old="1200000">۱,۲۰۰,۰۰۰</span>
+          <span class="new" data-new="999000">۹۹۹,۰۰۰ تومان</span>
+        </div>
+
+        <button class="btn-add">افزودن به سبد</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <div class="discount-badge" data-discount></div>
+
+        <img src="assets/products/runmus.jfif" alt="هدفون گیمینگ K2">
+
+        <h4>هدفون گیمینگ</h4>
+        <h5>RunMus مدل K2</h5>
+
+        <div class="price">
+          <span class="old" data-old="12500000">۱۲,۵۰۰,۰۰۰</span>
+          <span class="new" data-new="11200000">۱۱,۲۰۰,۰۰۰ تومان</span>
+        </div>
+
+        <button class="btn-add">افزودن به سبد</button>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <div class="discount-badge" data-discount></div>
+
+        <img src="assets/products/jbl.png" alt="JBL Tune">
+
+        <h4>هدفون بلوتوثی جی بی ال</h4>
+        <h5>TUNE 125 BT</h5>
+
+        <div class="price">
+          <span class="old" data-old="850000">۸۵۰,۰۰۰</span>
+          <span class="new" data-new="699000">۶۹۹,۰۰۰ تومان</span>
+        </div>
+
+        <button class="btn-add">افزودن به سبد</button>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+           
+
+  <footer class="footer">
+  <div class="footer-column">
+    <h3>درباره ما</h3>
+    <p>توضیح کوتاه درباره فروشگاه شما...</p>
+  </div>
+
+  <div class="footer-column">
+    <h3>لینک‌های مهم</h3>
+    <ul>
+      <li><a href="#">صفحه اصلی</a></li>
+      <li><a href="#">محصولات</a></li>
+      <li><a href="#">تماس با ما</a></li>
+      <li><a href="#">درباره ما</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-column">
+    <h3>شبکه‌های اجتماعی</h3>
+    <ul>
+      <li><a href="#">اینستاگرام</a></li>
+      <li><a href="#">تلگرام</a></li>
+      <li><a href="#">واتساپ</a></li>
+    </ul>
+  </div>
+  <img src="assets/products/enmad.jfif" alt="">
+</footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
