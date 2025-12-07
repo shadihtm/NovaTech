@@ -11,7 +11,7 @@ new Swiper('.swiper', {
   loop: true,
   autoplay: { delay: 3000 },
   pagination: { el: '.swiper-pagination', clickable: true },
-  slidesPerView: 'auto', // اندازه خودکار با تصاویر کوچیک
+  slidesPerView: 'auto', 
   spaceBetween: 20,
   breakpoints: {
     640: { slidesPerView: 1 },
@@ -23,7 +23,7 @@ new Swiper('.swiper', {
 // ================= Cart Counter =================
 let cartCount = 0;
 const cartCountElement = document.getElementById('cart-count');
-cartCountElement.style.display = 'none'; // ابتدا مخفی
+cartCountElement.style.display = 'none'; 
 
 document.querySelectorAll('.btn-add').forEach(button => {
   button.addEventListener('click', () => {
@@ -31,14 +31,13 @@ document.querySelectorAll('.btn-add').forEach(button => {
     cartCountElement.textContent = cartCount;
     cartCountElement.style.display = cartCount > 0 ? 'flex' : 'none';
 
-    // افکت کوتاه روی شمارنده
+    
     cartCountElement.animate([{ transform: 'scale(1.3)' }, { transform: 'scale(1)' }], { duration: 200 });
   });
 });
 
 // ================= Countdown Timer =================
 function startCountdown() {
-  // زمان پایان جشنواره (مثال: 52 ساعت از الان)
   const endTime = new Date().getTime() + (52 * 60 * 60 * 1000) + (34 * 60 * 1000); 
 
   const hoursEl = document.getElementById('hours');
